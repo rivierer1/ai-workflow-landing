@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Workflow Solutions | Automation for Accounting Firms</title>
+    <meta name="description" content="We help accounting firms automate invoice processing, data entry, and reconciliation. Get your free workflow audit today.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+        
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.25rem; opacity: 0.9; max-width: 600px; margin: 0 auto 30px; }
+        .cta-button {
+            background: #4ecca3;
+            color: #1a1a2e;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover { background: #3db389; transform: translateY(-2px); }
+        
+        .social-proof {
+            background: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        .social-proof p { color: #666; font-size: 0.95rem; }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .stat { text-align: center; }
+        .stat-number { font-size: 2rem; font-weight: bold; color: #1a1a2e; }
+        .stat-label { color: #666; font-size: 0.9rem; }
+        
+        .pain-points {
+            padding: 60px 20px;
+            background: #f8f9fa;
+        }
+        .pain-points h2 { text-align: center; margin-bottom: 40px; }
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .pain-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .pain-card h3 { color: #e74c3c; margin-bottom: 10px; }
+        
+        .solution {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .solution h2 { margin-bottom: 40px; }
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .benefit { padding: 20px; }
+        .benefit-icon { font-size: 3rem; margin-bottom: 15px; }
+        
+        .how-it-works {
+            padding: 60px 20px;
+            background: #f8f9fa;
+        }
+        .how-it-works h2 { text-align: center; margin-bottom: 40px; }
+        .steps {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .step {
+            text-align: center;
+            max-width: 250px;
+        }
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: #4ecca3;
+            color: #1a1a2e;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 15px;
+        }
+        
+        .testimonial {
+            padding: 60px 20px;
+            text-align: center;
+            background: #1a1a2e;
+            color: white;
+        }
+        .testimonial blockquote {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.3rem;
+            font-style: italic;
+            opacity: 0.95;
+        }
+        .testimonial cite {
+            display: block;
+            margin-top: 20px;
+            font-style: normal;
+            opacity: 0.7;
+        }
+        
+        .cta-section {
+            background: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .cta-section h2 { margin-bottom: 20px; color: #1a1a2e; }
+        .cta-section p { margin-bottom: 30px; color: #666; max-width: 500px; margin-left: auto; margin-right: auto; }
+        
+        .contact-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact-form textarea { min-height: 100px; resize: vertical; }
+        .contact-form button {
+            width: 100%;
+            background: #4ecca3;
+            color: #1a1a2e;
+            padding: 15px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .contact-form button:hover { background: #3db389; }
+        
+        .about {
+            padding: 60px 20px;
+            background: #f8f9fa;
+        }
+        .about-content {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .about h2 { margin-bottom: 20px; }
+        .about p { color: #666; margin-bottom: 15px; }
+        
+        footer {
+            padding: 30px;
+            text-align: center;
+            background: #1a1a2e;
+            color: white;
+        }
+        footer a { color: #4ecca3; }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Stop Drowning in Manual Workflows</h1>
+        <p>We help accounting firms automate invoice processing, data entry, and reconciliation — so you can focus on clients, not busywork.</p>
+        <a href="#contact" class="cta-button">Get Your Free Workflow Audit →</a>
+    </section>
+    
+    <section class="social-proof">
+        <p>Trusted by forward-thinking accounting firms on Florida's Space Coast</p>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">80%</div>
+                <div class="stat-label">Time Saved on Data Entry</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">3 mo</div>
+                <div class="stat-label">Average Payback Period</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">0</div>
+                <div class="stat-label">Manual Entry Errors</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="pain-points">
+        <h2>Sound Familiar?</h2>
+        <div class="pain-grid">
+            <div class="pain-card">
+                <h3>📧 Inbox Chaos</h3>
+                <p>Invoices arrive via email, mail, text, fax... and somehow you're expected to track them all without missing a beat.</p>
+            </div>
+            <div class="pain-card">
+                <h3>⌨️ Data Entry Hell</h3>
+                <p>Hours spent typing the same information into multiple systems. Every. Single. Day. Your team deserves better.</p>
+            </div>
+            <div class="pain-card">
+                <h3>🔄 Reconciliation Nightmares</h3>
+                <p>Month-end close takes forever because everything needs to be manually matched and verified.</p>
+            </div>
+            <div class="pain-card">
+                <h3>🧩 Too Many Tools</h3>
+                <p>10 different apps that don't talk to each other. More tech = more problems, not fewer.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="solution">
+        <h2>What If It Just... Worked?</h2>
+        <div class="benefits">
+            <div class="benefit">
+                <div class="benefit-icon">⚡</div>
+                <h3>80% Faster</h3>
+                <p>Automate repetitive tasks in days, not months. No lengthy implementation.</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">🎯</div>
+                <h3>Zero Errors</h3>
+                <p>AI doesn't fat-finger numbers, skip steps, or have a bad Monday.</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">💰</div>
+                <h3>Real ROI</h3>
+                <p>Most clients see full payback in under 3 months. Often faster.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Free Audit</h3>
+                <p>We map your current workflows and identify automation opportunities.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Quick Win</h3>
+                <p>We tackle one high-impact workflow first. You see results in days.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Scale Up</h3>
+                <p>Once you're convinced, we automate more. Or stop there — your call.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimonial">
+        <blockquote>
+            "95% of accounting professionals believe AI will become central to their workflow within 5 years — but most aren't ready to make the leap alone."
+        </blockquote>
+        <cite>— Accounting Today, January 2026</cite>
+    </section>
+    
+    <section class="cta-section" id="contact">
+        <h2>Ready to Reclaim Your Time?</h2>
+        <p>Book a free 20-minute workflow audit. We'll show you exactly where automation can save you hours every week — no pitch, just insights.</p>
+        <form class="contact-form" action="https://formspree.io/f/placeholder" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="company" placeholder="Firm Name">
+            <textarea name="message" placeholder="What's your biggest workflow headache?"></textarea>
+            <button type="submit">Request Free Audit →</button>
+        </form>
+        <p style="margin-top: 20px; font-size: 0.9rem; color: #999;">Or email directly: <a href="mailto:robertlriviere@gmail.com?subject=Workflow Audit Request" style="color: #4ecca3;">robertlriviere@gmail.com</a></p>
+    </section>
+    
+    <section class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>We're a small team based in Indian Harbour Beach, Florida, combining decades of systems engineering experience with cutting-edge AI tools.</p>
+            <p>We've seen how much time gets wasted on work that computers should be doing. Our mission is to give accounting professionals their time back — so they can focus on what actually requires human judgment.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2026 AI Workflow Solutions | Indian Harbour Beach, Florida</p>
+        <p style="margin-top: 10px; opacity: 0.7;"><a href="mailto:robertlriviere@gmail.com">Contact</a></p>
+    </footer>
+</body>
+</html>
