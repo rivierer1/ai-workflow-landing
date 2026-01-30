@@ -192,6 +192,14 @@
     </style>
 </head>
 <body>
+    <nav style="background: #1a1a2e; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center;">
+        <a href="index.html" style="color: #4ecca3; font-weight: bold; text-decoration: none; font-size: 1.2rem;">AI Workflow Solutions</a>
+        <div style="display: flex; gap: 25px;">
+            <a href="blog.html" style="color: white; text-decoration: none; opacity: 0.9;">Blog</a>
+            <a href="#contact" style="color: #4ecca3; text-decoration: none;">Book a Call</a>
+        </div>
+    </nav>
+    
     <section class="hero">
         <h1>Stop Drowning in Manual Workflows</h1>
         <p>We help accounting firms automate invoice processing, data entry, and reconciliation — so you can focus on clients, not busywork.</p>
@@ -290,14 +298,12 @@
     <section class="cta-section" id="contact">
         <h2>Ready to Reclaim Your Time?</h2>
         <p>Book a free 20-minute workflow audit. We'll show you exactly where automation can save you hours every week — no pitch, just insights.</p>
-        <form class="contact-form" action="https://formspree.io/f/placeholder" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
-            <input type="text" name="company" placeholder="Firm Name">
-            <textarea name="message" placeholder="What's your biggest workflow headache?"></textarea>
-            <button type="submit">Request Free Audit →</button>
-        </form>
-        <p style="margin-top: 20px; font-size: 0.9rem; color: #999;">Or email directly: <a href="mailto:robertlriviere@gmail.com?subject=Workflow Audit Request" style="color: #4ecca3;">robertlriviere@gmail.com</a></p>
+        
+        <!-- Calendly inline widget -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR_CALENDLY_USERNAME/workflow-audit" style="min-width:320px;height:630px;max-width:600px;margin:0 auto;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        
+        <p style="margin-top: 30px; font-size: 0.9rem; color: #999;">Prefer email? Reach out directly: <a href="mailto:robertlriviere@gmail.com?subject=Workflow Audit Request" style="color: #4ecca3;">robertlriviere@gmail.com</a></p>
     </section>
     
     <section class="about">
